@@ -71,6 +71,7 @@
     <module>sources/file-system</module>
     <module>sources/yaml</module>
     <module>sources/zookeeper</module>
+    <module>sources/toml</module>
     <module>converters/json</module>
     <module>utils/events</module>
     <module>utils/cdi-provider</module>
