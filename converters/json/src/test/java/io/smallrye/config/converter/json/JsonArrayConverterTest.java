@@ -4,12 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.StringReader;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
-import javax.json.Json;
-import javax.json.JsonArray;
-import javax.json.JsonReader;
-
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 import org.jboss.weld.junit5.WeldInitiator;
 import org.jboss.weld.junit5.WeldJunit5Extension;
@@ -19,6 +13,11 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import io.smallrye.config.inject.ConfigExtension;
 import io.smallrye.config.inject.ConfigProducer;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+import jakarta.json.Json;
+import jakarta.json.JsonArray;
+import jakarta.json.JsonReader;
 
 /**
  * Testing the injection of a JsonArray

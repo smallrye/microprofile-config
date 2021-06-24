@@ -22,10 +22,10 @@
 
 package io.smallrye.config.test.provider;
 
-import javax.enterprise.inject.Instance;
-import javax.inject.Inject;
-
 import org.eclipse.microprofile.config.inject.ConfigProperty;
+
+import jakarta.enterprise.inject.Instance;
+import jakarta.inject.Inject;
 
 public class InstanceAlone {
 

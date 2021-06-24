@@ -31,8 +31,9 @@
   <name>SmallRye: MicroProfile Config Test Suite</name>
 
   <modules>
-    <module>extra</module>
+    
     <module>tck</module>
+    <module>extra</module>
   </modules>
 
   <build>

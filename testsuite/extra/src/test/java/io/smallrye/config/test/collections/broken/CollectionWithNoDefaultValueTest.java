@@ -15,8 +15,6 @@
  */
 package io.smallrye.config.test.collections.broken;
 
-import javax.inject.Inject;
-
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.container.test.api.ShouldThrowException;
 import org.jboss.arquillian.testng.Arquillian;
@@ -26,6 +24,8 @@ import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.jboss.weld.exceptions.DeploymentException;
 import org.testng.annotations.Test;
+
+import jakarta.inject.Inject;
 
 /**
  * @author <a href="http://jmesnil.net/">Jeff Mesnil</a> (c) 2018 Red Hat inc.

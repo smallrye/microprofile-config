@@ -6,11 +6,10 @@ import static io.smallrye.common.expression.Expression.Flag.NO_TRIM;
 
 import java.util.Optional;
 
-import javax.annotation.Priority;
-
 import org.eclipse.microprofile.config.Config;
 
 import io.smallrye.common.expression.Expression;
+import jakarta.annotation.Priority;
 
 @Priority(Priorities.LIBRARY + 800)
 public class ExpressionConfigSourceInterceptor implements ConfigSourceInterceptor {

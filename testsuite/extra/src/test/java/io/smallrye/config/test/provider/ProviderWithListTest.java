@@ -20,9 +20,6 @@ import static org.testng.Assert.assertNotNull;
 
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.inject.Provider;
-
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.testng.Arquillian;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
@@ -31,6 +28,9 @@ import org.jboss.shrinkwrap.api.asset.StringAsset;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.testng.annotations.Test;
+
+import jakarta.inject.Inject;
+import jakarta.inject.Provider;
 
 /**
  * Test that configuration is injected into Provider.

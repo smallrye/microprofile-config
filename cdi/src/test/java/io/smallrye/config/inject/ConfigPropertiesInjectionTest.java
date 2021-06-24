@@ -9,10 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.NoSuchElementException;
 
-import javax.enterprise.context.Dependent;
-import javax.enterprise.inject.spi.CDI;
-import javax.inject.Inject;
-
 import org.eclipse.microprofile.config.Config;
 import org.eclipse.microprofile.config.ConfigProvider;
 import org.eclipse.microprofile.config.inject.ConfigProperties;
@@ -28,6 +24,9 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import io.smallrye.config.ConfigMessages;
 import io.smallrye.config.SmallRyeConfig;
 import io.smallrye.config.SmallRyeConfigBuilder;
+import jakarta.enterprise.context.Dependent;
+import jakarta.enterprise.inject.spi.CDI;
+import jakarta.inject.Inject;
 
 @ExtendWith(WeldJunit5Extension.class)
 class ConfigPropertiesInjectionTest {

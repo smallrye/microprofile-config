@@ -23,12 +23,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Iterator;
 
-import javax.annotation.Priority;
-
 import org.eclipse.microprofile.config.Config;
 import org.eclipse.microprofile.config.spi.ConfigSource;
 import org.eclipse.microprofile.config.spi.Converter;
 import org.junit.jupiter.api.Test;
+
+import jakarta.annotation.Priority;
 
 class BuilderReuseTest {
     @Test

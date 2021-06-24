@@ -2,9 +2,6 @@ package io.smallrye.config.events;
 
 import java.util.Optional;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.event.Observes;
-
 import org.jboss.weld.junit5.WeldInitiator;
 import org.jboss.weld.junit5.WeldJunit5Extension;
 import org.jboss.weld.junit5.WeldSetup;
@@ -14,6 +11,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import io.smallrye.config.events.regex.RegexFilter;
 import io.smallrye.config.inject.ConfigExtension;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.event.Observes;
 
 /**
  * Testing that the events fire correctly

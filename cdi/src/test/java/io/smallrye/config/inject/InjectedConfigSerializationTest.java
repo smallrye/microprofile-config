@@ -10,8 +10,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import javax.inject.Inject;
-
 import org.eclipse.microprofile.config.Config;
 import org.eclipse.microprofile.config.ConfigProvider;
 import org.eclipse.microprofile.config.spi.ConfigProviderResolver;
@@ -25,6 +23,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import io.smallrye.config.SmallRyeConfig;
 import io.smallrye.config.SmallRyeConfigBuilder;
+import jakarta.inject.Inject;
 
 @ExtendWith(WeldJunit5Extension.class)
 class InjectedConfigSerializationTest {

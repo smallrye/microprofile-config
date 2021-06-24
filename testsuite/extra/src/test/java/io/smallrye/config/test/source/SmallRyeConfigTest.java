@@ -7,8 +7,6 @@ import static org.testng.Assert.assertTrue;
 import java.util.List;
 import java.util.stream.StreamSupport;
 
-import javax.inject.Inject;
-
 import org.eclipse.microprofile.config.Config;
 import org.eclipse.microprofile.config.spi.ConfigSource;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -22,6 +20,7 @@ import io.smallrye.config.DefaultValuesConfigSource;
 import io.smallrye.config.EnvConfigSource;
 import io.smallrye.config.PropertiesConfigSource;
 import io.smallrye.config.SysPropConfigSource;
+import jakarta.inject.Inject;
 
 public class SmallRyeConfigTest extends Arquillian {
     @Deployment

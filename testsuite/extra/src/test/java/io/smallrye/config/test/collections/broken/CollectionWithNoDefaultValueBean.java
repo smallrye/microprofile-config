@@ -19,9 +19,9 @@ package io.smallrye.config.test.collections.broken;
 import java.util.List;
 import java.util.Set;
 
-import javax.inject.Inject;
-
 import org.eclipse.microprofile.config.inject.ConfigProperty;
+
+import jakarta.inject.Inject;
 
 /**
  * @author <a href="http://jmesnil.net/">Jeff Mesnil</a> (c) 2018 Red Hat inc.

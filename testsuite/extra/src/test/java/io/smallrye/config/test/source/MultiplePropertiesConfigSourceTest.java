@@ -2,8 +2,6 @@ package io.smallrye.config.test.source;
 
 import static org.testng.Assert.assertEquals;
 
-import javax.inject.Inject;
-
 import org.eclipse.microprofile.config.Config;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.testng.Arquillian;
@@ -12,6 +10,8 @@ import org.jboss.shrinkwrap.api.asset.StringAsset;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.testng.annotations.Test;
+
+import jakarta.inject.Inject;
 
 public class MultiplePropertiesConfigSourceTest extends Arquillian {
     @Deployment

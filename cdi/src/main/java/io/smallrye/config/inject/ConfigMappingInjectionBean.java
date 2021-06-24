@@ -11,20 +11,19 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Stream;
 
-import javax.enterprise.context.Dependent;
-import javax.enterprise.context.spi.CreationalContext;
-import javax.enterprise.inject.Default;
-import javax.enterprise.inject.spi.Annotated;
-import javax.enterprise.inject.spi.AnnotatedType;
-import javax.enterprise.inject.spi.Bean;
-import javax.enterprise.inject.spi.BeanManager;
-import javax.enterprise.inject.spi.InjectionPoint;
-
 import org.eclipse.microprofile.config.ConfigProvider;
 import org.eclipse.microprofile.config.inject.ConfigProperties;
 
 import io.smallrye.config.ConfigMapping;
 import io.smallrye.config.SmallRyeConfig;
+import jakarta.enterprise.context.Dependent;
+import jakarta.enterprise.context.spi.CreationalContext;
+import jakarta.enterprise.inject.Default;
+import jakarta.enterprise.inject.spi.Annotated;
+import jakarta.enterprise.inject.spi.AnnotatedType;
+import jakarta.enterprise.inject.spi.Bean;
+import jakarta.enterprise.inject.spi.BeanManager;
+import jakarta.enterprise.inject.spi.InjectionPoint;
 
 public class ConfigMappingInjectionBean<T> implements Bean<T> {
     private final BeanManager bm;

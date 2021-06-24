@@ -3,7 +3,7 @@ package io.smallrye.config;
 import java.util.Map;
 import java.util.function.Function;
 
-import javax.annotation.Priority;
+import jakarta.annotation.Priority;
 
 @Priority(Priorities.LIBRARY + 400)
 public class FallbackConfigSourceInterceptor implements ConfigSourceInterceptor {

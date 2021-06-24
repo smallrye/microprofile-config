@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
 
-import javax.annotation.Priority;
+import jakarta.annotation.Priority;
 
 @Priority(Priorities.LIBRARY + 1000)
 public class RelocateConfigSourceInterceptor implements ConfigSourceInterceptor {

@@ -2,10 +2,10 @@ package io.smallrye.config.test.provider;
 
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.inject.Provider;
-
 import org.eclipse.microprofile.config.inject.ConfigProperty;
+
+import jakarta.inject.Inject;
+import jakarta.inject.Provider;
 
 public class ProviderBeanWithList {
 

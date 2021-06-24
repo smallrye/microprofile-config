@@ -15,11 +15,6 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.context.Dependent;
-import javax.enterprise.inject.spi.InjectionPoint;
-import javax.inject.Inject;
-
 import org.eclipse.microprofile.config.ConfigProvider;
 import org.eclipse.microprofile.config.inject.ConfigProperties;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
@@ -47,6 +42,10 @@ import io.smallrye.config.ConfigValidationException;
 import io.smallrye.config.ConfigValue;
 import io.smallrye.config.SmallRyeConfig;
 import io.smallrye.config.SmallRyeConfigBuilder;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.Dependent;
+import jakarta.enterprise.inject.spi.InjectionPoint;
+import jakarta.inject.Inject;
 
 /**
  * The Exception messages caused by Config CDI should have the format:<br>
@@ -63,7 +62,7 @@ import io.smallrye.config.SmallRyeConfigBuilder;
  * </pre>
  * 
  * If n Exception messages are thrown during
- * {@link ConfigExtension#validate(javax.enterprise.inject.spi.AfterDeploymentValidation)},
+ * {@link ConfigExtension#validate(jakarta.enterprise.inject.spi.AfterDeploymentValidation)},
  * as defined by
  * {@link org.jboss.weld.exceptions.DeploymentException#DeploymentException(List)}
  * the messages will be bundled together as follows:

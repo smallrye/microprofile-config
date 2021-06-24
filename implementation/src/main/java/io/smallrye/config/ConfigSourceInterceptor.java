@@ -24,7 +24,7 @@ import io.smallrye.common.annotation.Experimental;
  * <p>
  *
  * A {@link ConfigSourceInterceptor} implementation class can specify a priority by way of the standard
- * {@code javax.annotation.Priority} annotation. If no priority is explicitly assigned, the default priority value
+ * {@code jakarta.annotation.Priority} annotation. If no priority is explicitly assigned, the default priority value
  * of {@code io.smallrye.config.Priorities#APPLICATION} is assumed. If multiple interceptors are registered with the
  * same priority, then their execution order may be non deterministic.
  */

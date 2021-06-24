@@ -1,7 +1,7 @@
 package io.smallrye.config.validator;
 
-import javax.validation.Validation;
-import javax.validation.Validator;
+import jakarta.validation.Validation;
+import jakarta.validation.Validator;
 
 public class BeanValidationConfigValidatorImpl implements BeanValidationConfigValidator {
     private Validator validator;

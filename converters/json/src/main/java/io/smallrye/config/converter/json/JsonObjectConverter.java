@@ -2,11 +2,11 @@ package io.smallrye.config.converter.json;
 
 import java.io.StringReader;
 
-import javax.json.Json;
-import javax.json.JsonObject;
-import javax.json.JsonReader;
-
 import org.eclipse.microprofile.config.spi.Converter;
+
+import jakarta.json.Json;
+import jakarta.json.JsonObject;
+import jakarta.json.JsonReader;
 
 /**
  * Converts a json string to a JSonObject

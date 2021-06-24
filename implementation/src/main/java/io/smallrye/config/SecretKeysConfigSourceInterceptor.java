@@ -2,7 +2,7 @@ package io.smallrye.config;
 
 import java.util.Set;
 
-import javax.annotation.Priority;
+import jakarta.annotation.Priority;
 
 @Priority(Priorities.LIBRARY + 100)
 public class SecretKeysConfigSourceInterceptor implements ConfigSourceInterceptor {

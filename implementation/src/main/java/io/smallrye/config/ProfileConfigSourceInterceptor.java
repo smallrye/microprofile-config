@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
-import javax.annotation.Priority;
+import jakarta.annotation.Priority;
 
 @Priority(Priorities.LIBRARY + 600)
 public class ProfileConfigSourceInterceptor implements ConfigSourceInterceptor {

@@ -9,10 +9,6 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Path;
-import javax.validation.Validator;
-
 import io.smallrye.config.ConfigMappingInterface;
 import io.smallrye.config.ConfigMappingInterface.CollectionProperty;
 import io.smallrye.config.ConfigMappingInterface.MapProperty;
@@ -21,6 +17,9 @@ import io.smallrye.config.ConfigMappingInterface.Property;
 import io.smallrye.config.ConfigValidationException;
 import io.smallrye.config.ConfigValidationException.Problem;
 import io.smallrye.config.ConfigValidator;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Path;
+import jakarta.validation.Validator;
 
 public interface BeanValidationConfigValidator extends ConfigValidator {
 

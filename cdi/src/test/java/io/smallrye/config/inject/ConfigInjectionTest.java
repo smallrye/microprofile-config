@@ -16,9 +16,6 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.function.Supplier;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
-
 import org.eclipse.microprofile.config.Config;
 import org.eclipse.microprofile.config.ConfigProvider;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
@@ -35,6 +32,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import io.smallrye.config.ConfigValue;
 import io.smallrye.config.SmallRyeConfig;
 import io.smallrye.config.SmallRyeConfigBuilder;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 
 @ExtendWith(WeldJunit5Extension.class)
 class ConfigInjectionTest {

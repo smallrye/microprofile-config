@@ -20,10 +20,6 @@ import java.util.function.BiFunction;
 import java.util.function.IntFunction;
 import java.util.function.Supplier;
 
-import javax.enterprise.inject.spi.AnnotatedMember;
-import javax.enterprise.inject.spi.AnnotatedType;
-import javax.enterprise.inject.spi.InjectionPoint;
-
 import org.eclipse.microprofile.config.Config;
 import org.eclipse.microprofile.config.ConfigValue;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
@@ -34,6 +30,9 @@ import io.smallrye.config.SecretKeys;
 import io.smallrye.config.SmallRyeConfig;
 import io.smallrye.config.common.AbstractConverter;
 import io.smallrye.config.common.AbstractDelegatingConverter;
+import jakarta.enterprise.inject.spi.AnnotatedMember;
+import jakarta.enterprise.inject.spi.AnnotatedType;
+import jakarta.enterprise.inject.spi.InjectionPoint;
 
 /**
  * Actual implementations for producer method in CDI producer {@link ConfigProducer}.

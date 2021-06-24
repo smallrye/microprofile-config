@@ -38,20 +38,6 @@ import java.util.Set;
 import java.util.function.Supplier;
 import java.util.stream.StreamSupport;
 
-import javax.enterprise.event.Observes;
-import javax.enterprise.inject.Instance;
-import javax.enterprise.inject.spi.AfterBeanDiscovery;
-import javax.enterprise.inject.spi.AfterDeploymentValidation;
-import javax.enterprise.inject.spi.AnnotatedType;
-import javax.enterprise.inject.spi.BeanManager;
-import javax.enterprise.inject.spi.BeforeBeanDiscovery;
-import javax.enterprise.inject.spi.Extension;
-import javax.enterprise.inject.spi.InjectionPoint;
-import javax.enterprise.inject.spi.ProcessAnnotatedType;
-import javax.enterprise.inject.spi.ProcessInjectionPoint;
-import javax.enterprise.inject.spi.WithAnnotations;
-import javax.inject.Provider;
-
 import org.eclipse.microprofile.config.Config;
 import org.eclipse.microprofile.config.ConfigProvider;
 import org.eclipse.microprofile.config.inject.ConfigProperties;
@@ -61,6 +47,19 @@ import io.smallrye.config.ConfigMapping;
 import io.smallrye.config.ConfigMappings.ConfigClassWithPrefix;
 import io.smallrye.config.ConfigValidationException;
 import io.smallrye.config.SmallRyeConfig;
+import jakarta.enterprise.event.Observes;
+import jakarta.enterprise.inject.Instance;
+import jakarta.enterprise.inject.spi.AfterBeanDiscovery;
+import jakarta.enterprise.inject.spi.AfterDeploymentValidation;
+import jakarta.enterprise.inject.spi.AnnotatedType;
+import jakarta.enterprise.inject.spi.BeanManager;
+import jakarta.enterprise.inject.spi.BeforeBeanDiscovery;
+import jakarta.enterprise.inject.spi.Extension;
+import jakarta.enterprise.inject.spi.InjectionPoint;
+import jakarta.enterprise.inject.spi.ProcessAnnotatedType;
+import jakarta.enterprise.inject.spi.ProcessInjectionPoint;
+import jakarta.enterprise.inject.spi.WithAnnotations;
+import jakarta.inject.Provider;
 
 /**
  * CDI Extension to produces Config bean.

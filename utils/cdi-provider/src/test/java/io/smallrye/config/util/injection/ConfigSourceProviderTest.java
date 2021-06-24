@@ -7,8 +7,6 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import java.util.Iterator;
 import java.util.Map;
 
-import javax.inject.Inject;
-
 import org.eclipse.microprofile.config.Config;
 import org.eclipse.microprofile.config.spi.ConfigSource;
 import org.jboss.weld.junit5.WeldInitiator;
@@ -18,6 +16,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import io.smallrye.config.inject.ConfigExtension;
+import jakarta.inject.Inject;
 
 /**
  * Testing the injection of a Config source name and the Config Source Map

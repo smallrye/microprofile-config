@@ -15,9 +15,9 @@
  */
 package io.smallrye.config.test.converter;
 
-import javax.annotation.Priority;
-
 import org.eclipse.microprofile.config.spi.Converter;
+
+import jakarta.annotation.Priority;
 
 @Priority(102)
 public class IntConverter implements Converter<Integer> {

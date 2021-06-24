@@ -8,8 +8,6 @@ import java.util.OptionalDouble;
 import java.util.OptionalInt;
 import java.util.OptionalLong;
 
-import javax.inject.Inject;
-
 import org.eclipse.microprofile.config.ConfigProvider;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 import org.eclipse.microprofile.config.spi.ConfigProviderResolver;
@@ -23,6 +21,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import io.smallrye.config.SmallRyeConfig;
 import io.smallrye.config.SmallRyeConfigBuilder;
+import jakarta.inject.Inject;
 
 @ExtendWith(WeldJunit5Extension.class)
 class OptionalInjectionTest {

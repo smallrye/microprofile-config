@@ -4,9 +4,6 @@ import static io.smallrye.config.inject.KeyValuesConfigSource.config;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import javax.enterprise.inject.spi.CDI;
-import javax.inject.Inject;
-
 import org.eclipse.microprofile.config.ConfigProvider;
 import org.eclipse.microprofile.config.spi.ConfigProviderResolver;
 import org.jboss.weld.junit5.WeldInitiator;
@@ -21,6 +18,8 @@ import io.smallrye.config.ConfigMapping;
 import io.smallrye.config.SmallRyeConfig;
 import io.smallrye.config.SmallRyeConfigBuilder;
 import io.smallrye.config.WithDefault;
+import jakarta.enterprise.inject.spi.CDI;
+import jakarta.inject.Inject;
 
 @ExtendWith(WeldJunit5Extension.class)
 class ConfigMappingInjectionTest {

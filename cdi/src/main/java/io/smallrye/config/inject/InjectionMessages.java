@@ -10,14 +10,14 @@ import java.util.Arrays;
 import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
 
-import javax.enterprise.inject.spi.InjectionPoint;
-
 import org.jboss.logging.Messages;
 import org.jboss.logging.annotations.Cause;
 import org.jboss.logging.annotations.Message;
 import org.jboss.logging.annotations.MessageBundle;
 import org.jboss.logging.annotations.Param;
 import org.jboss.logging.annotations.Pos;
+
+import jakarta.enterprise.inject.spi.InjectionPoint;
 
 @MessageBundle(projectCode = "SRCFG", length = 5)
 public interface InjectionMessages {

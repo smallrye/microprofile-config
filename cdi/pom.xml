@@ -76,7 +76,7 @@
       <artifactId>weld-junit5</artifactId>
       <exclusions>
         <exclusion>
-          <groupId>javax.enterprise</groupId>
+          <groupId>jakarta.enterprise</groupId>
           <artifactId>cdi-api</artifactId>
         </exclusion>
       </exclusions>

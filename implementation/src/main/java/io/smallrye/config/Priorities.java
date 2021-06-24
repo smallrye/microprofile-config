@@ -4,7 +4,7 @@ import io.smallrye.common.annotation.Experimental;
 
 /**
  * A collection of built-in priority constants for {@link ConfigSourceInterceptor} that are supposed to be
- * ordered based on their {@code javax.annotation.Priority} class-level annotation.
+ * ordered based on their {@code jakarta.annotation.Priority} class-level annotation.
  */
 @Experimental("Interceptor API to intercept resolution of a configuration name")
 public final class Priorities {

@@ -11,11 +11,11 @@ import java.util.Set;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
-import javax.annotation.Priority;
-
 import org.jboss.logging.Logger;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import jakarta.annotation.Priority;
 
 class ConfigSourceInterceptorTest {
     @Test
